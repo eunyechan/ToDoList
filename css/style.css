@@ -1,0 +1,495 @@
+/* Desktop Device : 1080 이상 */
+@media screen and (min-width:1080px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-image: url(https://mblogthumb-phinf.pstatic.net/MjAyMDAzMTdfNDYg/MDAxNTg0MzczNzk3ODQy.Ooucf2f_HpBxjTYmKvVzjsUFVf8u0f8znnZJvcexQ2cg.av6oDkX_30e8d8Ln3jMaR25p_1TW-LyUee9a56dflscg.JPEG.se___ovo/%EB%85%B8%ED%8A%B8%EB%B6%81%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B421.jpg?type=w800);
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        /* background: linear-gradient(100deg, #86A8E7, #91EAE4); */
+        color: floralwhite;
+        font-family: fantasy;
+        min-height: 100vh;
+        opacity: 0.8;
+    }
+    
+    header {
+        font-size: 1.5rem;
+    }
+    #headerTitle {
+        width: 30vw; 
+        text-align: center;
+        color: white;
+    }
+    
+    header,
+    form{
+        min-height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form input{
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    form input, form button{
+        padding: 0.5rem;
+        font-size: 2rem;
+        border: none;
+        background: floralwhite;
+        outline: none;
+        font-family: fantasy;
+    }
+    
+    
+    form button{
+        color: #d193c9;
+        background: floralwhite;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-left: 1px solid black;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    form button:hover{
+        background: #d193c9;
+        color: floralwhite;
+    }
+    
+    .todo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .todo-list{
+        min-width: 30%;
+        list-style: none;
+        
+    }
+    
+    .todo{
+        margin: 0.5rem;
+        background: floralwhite;
+        color: black;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.5s ease;
+        border-radius: 10px;
+    }
+    
+    .todo li{
+        flex: 1;
+    }
+    
+    .trash-btn,
+    .complete-btn{
+        background: #d193c9;
+        color: floralwhite;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        font: 1rem;
+        font-size: 1rem;
+    }
+    
+    .complete-btn{
+        background:  rgb(173, 101, 129);
+    }
+    .todo-item{
+        padding: 0rem 0.5rem;
+    }
+    
+    .fa-trash, 
+    .fa-check{
+        pointer-events: none;
+    }
+    
+    .completed{
+        text-decoration: line-through;
+        opacity: 0.4;
+    }
+    .fall{
+        transform: translateY(8rem) rotateZ(20deg);
+        opacity: 0;
+    }
+    
+    
+    select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        border: none;
+    }
+    
+    .select{
+        margin: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+    select{
+        color: #d193c9;
+        width: 10rem;
+        cursor: pointer;
+        padding: 1rem;
+        background-color: floralwhite;
+    }
+    .select::after{
+        content: "\25BC";
+        position: absolute;
+        background: #d193c9;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        pointer-events: none;
+    }
+    
+    .select:hover::after{
+        background: floralwhite;
+        color: #d193c9;
+    }
+    
+}
+
+
+/****************** Tablet Device : 641 ~ 768 */
+@media screen and (min-width: 641px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-image: url(https://mblogthumb-phinf.pstatic.net/MjAyMDAzMTdfNDYg/MDAxNTg0MzczNzk3ODQy.Ooucf2f_HpBxjTYmKvVzjsUFVf8u0f8znnZJvcexQ2cg.av6oDkX_30e8d8Ln3jMaR25p_1TW-LyUee9a56dflscg.JPEG.se___ovo/%EB%85%B8%ED%8A%B8%EB%B6%81%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B421.jpg?type=w800);
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        /* background: linear-gradient(100deg, #86A8E7, #174744); */
+        background-color: black;
+        color: floralwhite;
+        font-family: fantasy;
+        min-height: 100vh;
+        opacity: 0.8;
+    }
+    
+    header {
+        font-size: 1.5rem;
+        width: 100vw;
+    }
+
+    header,
+    form{
+        min-height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form input{
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    form input, form button{
+        padding: 0.5rem;
+        font-size: 2rem;
+        border: none;
+        background: floralwhite;
+        outline: none;
+        font-family: fantasy;
+    }
+    
+    
+    form button{
+        color:#d193c9;
+        background: floralwhite;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-left: 1px solid black;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    form button:hover{
+        background:#d193c9;
+        color: floralwhite;
+    }
+    
+    .todo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .todo-list{
+        min-width: 30%;
+        list-style: none;
+        
+    }
+    
+    .todo{
+        margin: 0.5rem;
+        background: floralwhite;
+        color: black;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.5s ease;
+        border-radius: 10px;
+    }
+    
+    .todo li{
+        flex: 1;
+    }
+    
+    .trash-btn,
+    .complete-btn{
+        background: #d193c9;
+        color: floralwhite;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        font: 1rem;
+        font-size: 1rem;
+    }
+    
+    .complete-btn{
+        background:  rgb(173, 101, 129);
+    }
+    .todo-item{
+        padding: 0rem 0.5rem;
+    }
+    
+    .fa-trash, 
+    .fa-check{
+        pointer-events: none;
+    }
+    
+    .completed{
+        text-decoration: line-through;
+        opacity: 0.4;
+    }
+    .fall{
+        transform: translateY(8rem) rotateZ(20deg);
+        opacity: 0;
+    }
+    
+    
+    select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        border: none;
+    }
+    
+    .select{
+        margin: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+    select{
+        color: #d193c9;
+        width: 10rem;
+        cursor: pointer;
+        padding: 1rem;
+        height: 7.5vh;
+        background-color: floralwhite;
+    }
+    .select::after{
+        content: "\25BC";
+        position: absolute;
+        background: #d193c9;
+        top: 0;
+        right: 0;
+        padding: 1.2rem;
+        pointer-events: none;
+    }
+    
+    .select:hover::after{
+        background: floralwhite;
+        color: #d193c9;
+    }
+    
+ 
+}
+
+
+/************************* 모바일 Device : 0 ~ 640 */
+@media screen and (max-width: 640px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-image: url(https://mblogthumb-phinf.pstatic.net/MjAyMDAzMTdfNDYg/MDAxNTg0MzczNzk3ODQy.Ooucf2f_HpBxjTYmKvVzjsUFVf8u0f8znnZJvcexQ2cg.av6oDkX_30e8d8Ln3jMaR25p_1TW-LyUee9a56dflscg.JPEG.se___ovo/%EB%85%B8%ED%8A%B8%EB%B6%81%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B421.jpg?type=w800);
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        /* background: linear-gradient(100deg, #86A8E7, #174744); */
+        /* background-color: blue; */
+        color: floralwhite;
+        font-family: fantasy;
+        min-height: 100vh;
+        opacity: 0.8;
+    }
+    
+    header {
+        font-size: 1.5rem;
+        width: 100vw;
+    }
+
+    header,
+    form{
+        min-height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form input{
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        width: 50vw;
+        margin-left: 1rem;
+    }
+    form input, form button{
+        padding: 0.5rem;
+        font-size: 1.0rem;
+        border: none;
+        background: floralwhite;
+        outline: none;
+        font-family: fantasy;
+    }
+    
+    
+    form button{
+        color: #d193c9;
+        background: floralwhite;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-left: 1px solid black;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 1.0rem;
+    }
+    
+    form button:hover{
+        background: #d193c9;
+        color: floralwhite;
+    }
+    
+    .todo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .todo-list{
+        min-width: 30%;
+        list-style: none;
+        
+    }
+    
+    .todo{
+        margin: 0.5rem;
+        background: floralwhite;
+        color: black;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.5s ease;
+        border-radius: 10px;
+        width: 80vw;
+        
+        font-size: 1.0rem;
+    }
+    
+    .todo li{
+        flex: 1;
+    }
+    
+    .trash-btn,
+    .complete-btn{
+        background: #d193c9;
+        color: floralwhite;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        font: 1rem;
+        height: 100%;
+    }
+    
+    .complete-btn{
+        background: rgb(173, 101, 129);
+    }
+    .todo-item{
+        padding: 0rem 0.5rem;
+    }
+    
+    .fa-trash, 
+    .fa-check{
+        pointer-events: none;
+    }
+    
+    .completed{
+        text-decoration: line-through;
+        opacity: 0.4;
+    }
+    .fall{
+        transform: translateY(8rem) rotateZ(20deg);
+        opacity: 0;
+    }
+    
+    
+    select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        border: none;
+    }
+    
+    .select{
+        margin: 0.5rem;
+        position: relative;
+        overflow: hidden;
+        height: 5vh;
+    }
+    select{
+        color: #d193c9;
+        width: 10rem;
+        cursor: pointer;
+        padding: 0.7rem;
+        border-radius: 10px;
+        background-color: floralwhite;
+    }
+    .select::after{
+        content: "\25BC";
+        position: absolute;
+        color: #d193c9;
+        font-size: 0.7rem;
+        top: 0;
+        right: 0;
+        padding-top: 0.7rem;
+        padding-bottom: 1rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        pointer-events: none;
+    }
+    
+    .select:hover::after{
+        background: floralwhite;
+        color: #d193c9;
+    }
+    
+}
